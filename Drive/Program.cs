@@ -1,11 +1,14 @@
+using Drive.Endpoints;
 using EstruturaMinimalApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var app = builder.Build();
-
 //WebApplicationBuilder : Configuration, Evironment, Host, Logging, Metrics, Services, WebHost
 builder.AddServices();
+
+var app = builder.Build();
+
+app.MapFileEndPoints();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -11,7 +11,6 @@ namespace Drive.Models.Context
 
         public DbSet<FileModel> Files { get; set; }
 
-
         //OnModelCreating serve para carregar automaticamente todas as
         //configurações de mapeamento (EntityTypeConfiguration)
         protected override void OnModelCreating(ModelBuilder modelBuilder)

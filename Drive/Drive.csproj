@@ -22,11 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Endpoints\" />
-    <Folder Include="Models\Entities\" />
-    <Folder Include="Models\EntityCOnfiguration\" />
     <Folder Include="Models\Enums\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
