@@ -1,10 +1,11 @@
-﻿using Drive.Models.Entities;
+﻿using Drive.Dto.Response;
+using Drive.Models.Entities;
 
 namespace Drive.Services.Files
 {
     public interface IFileInterface
     {
-        Task<IEnumerable<FileModel>> GetFiles();
+        Task<IEnumerable<FileResponse>> GetFiles();
         Task<FileModel> UploadFile(IFormFile file);
     }
 }
